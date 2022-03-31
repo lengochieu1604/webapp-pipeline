@@ -1,4 +1,5 @@
 # **LAB DOCKER, K8s, JENKINS**
+# BUILD A WEB APPLICATION USING DOCKER, K8s, JENKINS
 
 ## CHAPTER 1 	OBJECTIVES
     In this assignment, we will create and configure an environment with an automated CI/CD pipeline to build and deploy simple application (Angular, Postgre, NodeJS).
