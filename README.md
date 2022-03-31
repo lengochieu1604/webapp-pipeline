@@ -155,8 +155,9 @@
 ![image](https://user-images.githubusercontent.com/98753976/161122872-b5121284-d886-474d-a35e-8464b149f45e.png)
 
  
-	Access BE & FE using Web-brower
+### Access BE & FE using Web-brower
 ![image](https://user-images.githubusercontent.com/98753976/161122913-7bb83bfc-9687-4d54-8cbf-affbdf7a8714.png)
+
 ![image](https://user-images.githubusercontent.com/98753976/161122968-2f9dd04f-9e66-4613-844c-5b80a1eb7ddc.png)
 
 
@@ -196,7 +197,7 @@
 
 ### 3.4	Result 
 	>FE CI/CD
-	![image](https://user-images.githubusercontent.com/98753976/161123393-c055cf4b-4bd5-44e0-94f8-d777d52dbc5c.png)
+![image](https://user-images.githubusercontent.com/98753976/161123393-c055cf4b-4bd5-44e0-94f8-d777d52dbc5c.png)
 
 	>BE CI/CD
 ![image](https://user-images.githubusercontent.com/98753976/161123406-06836037-38fc-40c2-a15e-a3ed33f5dc13.png)
