@@ -12,13 +12,14 @@
 	    o Build & Push Image job creates FE and BE image, docker image to Docker Registry (Docker Hub, Azure Container Registry).
 	    o Deploy K8s Cluster job pull image from Docker Registry and automate deploy cluster in K8s .
 	    o CI/CD Pipeline job create and automate run pipeline to deploy application in VM.
-    Architecture of assignment:
+	    
+### Architecture of assignment:
 ![image](https://user-images.githubusercontent.com/98753976/161120969-7ac5cdb5-041a-4cb1-97dd-1f0d48bd36ee.png)
 
  
 ### 2.2	Prerequisites
 ### 2.2.1	Software version information
-	![image](https://user-images.githubusercontent.com/98753976/161121128-92577104-84f5-428e-99eb-068eee6c604a.png)
+![image](https://user-images.githubusercontent.com/98753976/161121128-92577104-84f5-428e-99eb-068eee6c604a.png)
 
 
 ### 2.2.2	Install Docker + Kubernetes + Jenkins 
@@ -97,7 +98,7 @@
 	 Run the following commands to build container from FE source code:
 >$ docker build [OPTIONS] PATH | URL | 
 
-### 3.1.2BE Docker Image
+### 3.1.2 BE Docker Image
 	Run the following commands to build container from FE source code:
 >$ docker build [OPTIONS] PATH | URL | 
 
