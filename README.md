@@ -18,7 +18,7 @@
  
 ### 2.2	Prerequisites
 ### 2.2.1	Software version information
-![image](https://user-images.githubusercontent.com/98753976/161121128-92577104-84f5-428e-99eb-068eee6c604a.png)
+	![image](https://user-images.githubusercontent.com/98753976/161121128-92577104-84f5-428e-99eb-068eee6c604a.png)
 
 
 ### 2.2.2	Install Docker + Kubernetes + Jenkins 
@@ -28,7 +28,7 @@
     3.	https://minikube.sigs.k8s.io/docs/start/
     4.	https://www.jenkins.io/doc/book/installing/docker/
 	
-### 6.2.3	Setup Environments
+### 2.2.3	Setup Environments
 ### 2.2.3.1	Docker login to ACR
     Run the following commands to log into Azure:
 > docker login assignmentw3.azurecr.io 
