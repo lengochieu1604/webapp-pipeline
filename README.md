@@ -151,7 +151,7 @@
 
  
 ## 3.2.4 Output
-	![image](https://user-images.githubusercontent.com/98753976/161122872-b5121284-d886-474d-a35e-8464b149f45e.png)
+![image](https://user-images.githubusercontent.com/98753976/161122872-b5121284-d886-474d-a35e-8464b149f45e.png)
 
  
 	Access BE & FE using Web-brower
@@ -168,7 +168,7 @@
 ### 3.3.1 FE Jenkinsfile
 	Enviroment
 	Stages
-	![image](https://user-images.githubusercontent.com/98753976/161123147-ede828fc-6ba4-4414-a059-ff984a0c5f37.png)
+![image](https://user-images.githubusercontent.com/98753976/161123147-ede828fc-6ba4-4414-a059-ff984a0c5f37.png)
 
 	Post
 
@@ -187,18 +187,18 @@
 		o Create a Jenkins SSH credential
 		o Creating agent
 	Result
-	![image](https://user-images.githubusercontent.com/98753976/161123325-41f5af0e-6084-4710-a992-5f1a5387caf6.png)
+![image](https://user-images.githubusercontent.com/98753976/161123325-41f5af0e-6084-4710-a992-5f1a5387caf6.png)
 
 
 ### 3.3.4 Create Pipeline
-	![image](https://user-images.githubusercontent.com/98753976/161123348-fe96c7df-f6ac-47cf-bb46-d3190281c5db.png)
+![image](https://user-images.githubusercontent.com/98753976/161123348-fe96c7df-f6ac-47cf-bb46-d3190281c5db.png)
 
 ### 3.4	Result 
 	>FE CI/CD
 	![image](https://user-images.githubusercontent.com/98753976/161123393-c055cf4b-4bd5-44e0-94f8-d777d52dbc5c.png)
 
 	>BE CI/CD
-	![image](https://user-images.githubusercontent.com/98753976/161123406-06836037-38fc-40c2-a15e-a3ed33f5dc13.png)
+![image](https://user-images.githubusercontent.com/98753976/161123406-06836037-38fc-40c2-a15e-a3ed33f5dc13.png)
 
 # CHAPTER 4 	TROUBLESHOOTING
 ## 4.1	Resolve NPM issue whilel running node JS application
