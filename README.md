@@ -137,17 +137,17 @@
 
 ### 3.2.3 Get K8s Cluster
 	Run the following commands to describe the pod:
-	![image](https://user-images.githubusercontent.com/98753976/161122760-08a028f7-da48-4639-a4fb-c0319965c233.png)
+![image](https://user-images.githubusercontent.com/98753976/161122760-08a028f7-da48-4639-a4fb-c0319965c233.png)
 
 	Run the following command to get all the components in the K8s cluster
-	![image](https://user-images.githubusercontent.com/98753976/161122770-397eeeba-6ed7-4d7e-bf13-d33d6cf33820.png)
+![image](https://user-images.githubusercontent.com/98753976/161122770-397eeeba-6ed7-4d7e-bf13-d33d6cf33820.png)
 
 	Authorize BE
-	![image](https://user-images.githubusercontent.com/98753976/161122778-7dde39da-0886-449b-9aee-f827726492cd.png)
+![image](https://user-images.githubusercontent.com/98753976/161122778-7dde39da-0886-449b-9aee-f827726492cd.png)
 
 	Get FE & BE url
-	![image](https://user-images.githubusercontent.com/98753976/161122797-f690dd99-318b-4675-ae3e-a6515881ede2.png)
-	![image](https://user-images.githubusercontent.com/98753976/161122816-57b7ea34-cabf-4d55-a329-719d4d3ec777.png)
+![image](https://user-images.githubusercontent.com/98753976/161122797-f690dd99-318b-4675-ae3e-a6515881ede2.png)
+![image](https://user-images.githubusercontent.com/98753976/161122816-57b7ea34-cabf-4d55-a329-719d4d3ec777.png)
 
 
  
@@ -156,8 +156,8 @@
 
  
 	Access BE & FE using Web-brower
-	![image](https://user-images.githubusercontent.com/98753976/161122913-7bb83bfc-9687-4d54-8cbf-affbdf7a8714.png)
-	![image](https://user-images.githubusercontent.com/98753976/161122968-2f9dd04f-9e66-4613-844c-5b80a1eb7ddc.png)
+![image](https://user-images.githubusercontent.com/98753976/161122913-7bb83bfc-9687-4d54-8cbf-affbdf7a8714.png)
+![image](https://user-images.githubusercontent.com/98753976/161122968-2f9dd04f-9e66-4613-844c-5b80a1eb7ddc.png)
 
 
 	Validate DB in pod
