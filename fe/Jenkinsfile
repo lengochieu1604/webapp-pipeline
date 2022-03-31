@@ -1,0 +1,57 @@
+def gv
+pipeline {
+    // agent any
+    agent {
+        label "kubectl"
+    }
+    environment {
+        // GIT_COMMIT_SHORT = sh(
+        //     script: "printf \$(git rev-parse --short ${GIT_COMMIT})",
+        //     returnStdout: true
+        // )
+        // GIT_COMMIT_DATE = sh(
+        //     script: "printf \$(git show -s --format=%ci ${GIT_COMMIT})",
+        //     returnStdout: true
+        // )
+
+        ARTIFACT_REPOSITORY = "assignmentw3.azurecr.io"
+        CREDENTIAL_ID = "hieuacr"
+
+        // BUILD_IMAGE = "vandung:${GIT_COMMIT_DATE.take(10)}_${GIT_COMMIT_SHORT}"
+        BUILD_IMAGE = "assignmentw3.azurecr.io/lengochieu/angularhieu:${GIT_COMMIT}"
+        // DEPLOY_IMAGE = "${ARTIFACT_REPOSITORY}/${BUILD_IMAGE}"
+    }
+
+    stages {
+        stage ("Validate") {
+            steps {
+                gv = load 'script.groovy'
+                gv.validate()
+            }
+        }
+
+        stage ("Build docker image FE angular") {
+            steps { 
+                gv.build_docker_image()
+            }
+        }
+
+        stage ("Push docker image to ACR") {
+            steps {
+                gv.push_docker_image()
+            }
+        }
+
+        stage ("Deploy docker image to AKS") {
+            steps {
+                gv.deploy()
+            }
+        }
+    }
+
+    post {
+        always {  
+            gv.clean()
+        }
+    }
+}

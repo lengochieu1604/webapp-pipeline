@@ -1,0 +1,73 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs-backend
+spec:
+  selector:
+    matchLabels:
+      app: nodejs-backend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nodejs-backend
+    spec:
+      containers:
+        - name: nodejs-backend 
+          # image: lengochieu1604/nodejshieu:v2
+          image: assignmentw3.azurecr.io/lengochieu/nodejshieu
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+          env:
+            - name: DB_USER
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: username
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: password
+            - name: DB_HOST
+              value: localhost
+            - name: DB_NAME
+              value: admin 
+        - name: pg
+          # image: assignmentw3.azurecr.io/lengochieu/dbhieu
+          image: postgres
+          ports:
+            - containerPort: 5432
+          env:
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: username
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: password
+          # volumeMounts:
+          #   - mountPath: /var/lib/postgresql/data
+          #     name: postgredb
+      imagePullSecrets:
+        - name: mysecret2
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nodejs-backend
+  labels:
+    app: nodejs-backend
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 3000
+      targetPort: 3000
+      nodePort: 30000
+  selector:
+    app: nodejs-backend
+---

@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: angular-frontend
+spec:
+  selector:
+    matchLabels:
+      app: angular-frontend
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: angular-frontend
+    spec:
+      containers:
+        - name: angular-frontend  
+          # image: lengochieu1604/angularhieu:v1
+          image: assignmentw3.azurecr.io/lengochieu/angularhieu  
+          # imagePullPolicy: Always
+          ports:
+            - containerPort: 4200
+          env:
+            - name: beURL
+              value: "nodejs-backend:3000"
+      imagePullSecrets:
+        - name: mysecret2
+--- 
+apiVersion: v1
+kind: Service
+metadata:
+  name: angular-frontend
+  labels:
+    app: angular-frontend
+spec:
+  type: NodePort
+  ports:
+    - port: 4200
+      targetPort: 4200
+      nodePort: 30002
+  selector:
+    app: angular-frontend
